@@ -38,7 +38,7 @@ dependencyResolutionManagement {
 
 ### implementation to build.gradle depenences 
 ```
-    implementation fileTree(include: ["*.aar"] )
+    implementation fileTree(include: ["*.aar"], dir: "libs")
     implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.30'
     implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:oppwa@aar'
     implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:msa@aar'
