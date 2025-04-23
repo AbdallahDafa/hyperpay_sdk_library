@@ -5,7 +5,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.oppwa.mobile.connect.provider.Connect;
+//import com.oppwa.mobile.connect.provider.Connect;
 
 public class TwoMainActivity extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ public class TwoMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        TextView myTestText   = findViewById(R.id.myTestText);
-        myTestText.setText( "hyperpay Connect: " + Connect.ProviderMode.LIVE );
+//        TextView myTestText   = findViewById(R.id.myTestText);
+//        myTestText.setText( "hyperpay Connect: " + Connect.ProviderMode.LIVE );
     }
 }
