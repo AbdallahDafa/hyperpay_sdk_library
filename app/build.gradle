@@ -84,23 +84,26 @@ afterEvaluate {
                 println "******* abdo - publications Root dir is: $rootDir"
                 def fileSdkTest = file("./libs/ipworks3ds_sdk.aar")
                 println "******* abdo - fileSdkTest path: ${fileSdkTest.absolutePath}"
-                def fileTest = file("./libs/myfiles.txt")
-                println "******* abdo - fileTest toURI: ${fileTest.toURI()}"
-                println "******* abdo - fileTest toPath: ${fileTest.toPath()}"
-                println "******* abdo - fileTest toString: ${fileTest.toString()}"
-                println "******* abdo - fileTest exists: ${fileTest.exists()}"
+                println "******* abdo - fileSdkTest exists: ${fileSdkTest.exists()}"
+
+//                def fileTest = file("./libs/myfiles.txt")
+//                println "******* abdo - fileTest toURI: ${fileTest.toURI()}"
+//                println "******* abdo - fileTest toPath: ${fileTest.toPath()}"
+//                println "******* abdo - fileTest toString: ${fileTest.toString()}"
+//                println "******* abdo - fileTest exists: ${fileTest.exists()}"
 
 //                println "******* abdo - dir is: $libs"
 
                 // upload aar file path
-                artifact("./libs/ipworks3ds_sdk.aar") //'/home/jitpack/build/app/libs/ipworks3ds_sdk.aar'
-                artifact("./libs/msa.aar")
-                artifact("./libs/oppwa.mobile.aar")
-
-//                artifact("$rootDir/app/libs/ipworks3ds_sdk.aar")
-//                artifact("$rootDir/app/libs/msa.aar")
-//                artifact("$rootDir/app/libs/oppwa.mobile.aar")
-
+                artifact("./libs/ipworks3ds_sdk.aar") {
+                    classifier = "dafahyperpaysdk" // 👈 this avoids conflict
+                }
+                artifact("./libs/msa.aar"){
+                    classifier = "dafahyperpaysdk" // 👈 this avoids conflict
+                }
+                artifact("./libs/oppwa.mobile.aar"){
+                    classifier = "dafahyperpaysdk" // 👈 this avoids conflict
+                }
             }
 
         }
