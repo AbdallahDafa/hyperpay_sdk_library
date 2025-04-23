@@ -52,7 +52,7 @@ dependencies {
 
 
     //-----------------hyper pay demo
-    implementation fileTree(include: ["*.aar"], dir: "libs")
+//    implementation fileTree(include: ["*.aar"], dir: "libs")
 
 //    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
 //    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1"
@@ -76,7 +76,7 @@ afterEvaluate {
 
                 groupId = project.findProperty("group") ?: "com.github.AbdallahDafa"
                 artifactId = "hyperpay_sdk_library"
-                version = project.findProperty("version") ?: "1.0.6"
+                version = project.findProperty("version") ?: "1.0.9"
             }
         }
     }
