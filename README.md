@@ -28,6 +28,11 @@ dependencyResolutionManagement {
 } 
 
 ```
+
+----
+
+----
+
 ## Step 2 : implementation library 
 
 ## Testing Installing without SDK 
@@ -35,7 +40,6 @@ dependencyResolutionManagement {
 
 * this version have no .aar files, means just for testing , try in code use class "TestHyperPay.getName();"
 ```
-implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.16'
 
 ```
 or using latest version number 
@@ -43,4 +47,16 @@ or using latest version number
 * after install trying to get name of testin
 ```
         TestHyperPay.getName();
+```
+
+
+-----
+
+-----
+
+## Step 2 : Install sdk in your project
+
+```
+implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.20'
+
 ```
