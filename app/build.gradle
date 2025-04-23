@@ -80,12 +80,22 @@ afterEvaluate {
                 artifactId = "hyperpay_sdk_library"
                 version = project.findProperty("version") ?: "1.0.16"
 
+                // print for testing
                 println "******* abdo - publications Root dir is: $rootDir"
+                def fileSdkTest = file("./libs/ipworks3ds_sdk.aar")
+                println "fileSdkTest path: ${fileSdkTest.absolutePath}"
+                def fileTest = file("./libs/myfiles.txt")
+                println "fileTest toURI: ${fileTest.toURI()}"
+                println "fileTest toPath: ${myFile2.toPath()}"
+                println "fileTest toString: ${myFile2.toString()}"
+                println "fileTest exists: ${myFile2.exists()}"
+
 //                println "******* abdo - dir is: $libs"
 
                 // upload aar file path
-                artifact("./libs/ipworks3ds_sdk.aar") //'/home/jitpack/build/app/HyperPayLibrary/libs/ipworks3ds_sdk.aar'
-
+                artifact("./libs/ipworks3ds_sdk.aar") //'/home/jitpack/build/app/libs/ipworks3ds_sdk.aar'
+                artifact("./libs/msa.aar")
+                artifact("./libs/oppwa.mobile.aar")
 
 //                artifact("$rootDir/app/libs/ipworks3ds_sdk.aar")
 //                artifact("$rootDir/app/libs/msa.aar")
