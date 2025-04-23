@@ -66,3 +66,18 @@ dependencies {
 //    implementation "androidx.fragment:fragment-ktx:1.6.2"
 //    implementation "com.google.android.gms:play-services-wallet:19.2.1"
 }
+
+// publish release command
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = project.findProperty("group") ?: "com.github.AbdallahDafa"
+                artifactId = "hyperpay_sdk_library"
+                version = project.findProperty("version") ?: "1.0.6"
+            }
+        }
+    }
+}
