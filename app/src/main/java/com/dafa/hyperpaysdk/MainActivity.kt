@@ -1,6 +1,8 @@
 package com.dafa.hyperpaysdk
 
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.widget.TextView
 //import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,6 +13,7 @@ import com.oppwa.mobile.connect.provider.Connect
 class MainActivity : AppCompatActivity() {
 
 
+//    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        enableEdgeToEdge()
@@ -20,5 +23,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+//        var myTestText : TextView = findViewById<TextView>(R.id.myTestText);
+//        myTestText.setText( "hyperpay Connect: " + Connect.ProviderMode.LIVE )
     }
 }
