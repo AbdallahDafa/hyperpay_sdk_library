@@ -32,7 +32,7 @@ dependencyResolutionManagement {
 
 * in android/app/build.gradle file add in dependency : 
 ```
-implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.6'
+implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.7'
 
 ```
 or using latest version number 

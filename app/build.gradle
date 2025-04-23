@@ -3,6 +3,7 @@
 plugins {
 //    id 'com.android.application' // means type applicaiton
     id 'com.android.library'  // means type library
+    id 'maven-publish'
 }
 
 
