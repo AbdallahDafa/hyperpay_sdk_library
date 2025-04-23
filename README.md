@@ -28,27 +28,7 @@ dependencyResolutionManagement {
 } 
 
 ```
-
-----
-
-----
-
-## Step 2 : implementation library 
-
-## Testing Installing without SDK 
-* in android/app/build.gradle file add in dependency : 
-
-* this version have no .aar files, means just for testing , try in code use class "TestHyperPay.getName();"
-```
-
-```
-or using latest version number 
-
-* after install trying to get name of testin
-```
-        TestHyperPay.getName();
-```
-
+ 
 
 -----
 
@@ -56,7 +36,28 @@ or using latest version number
 
 ## Step 2 : Install sdk in your project
 
+### implementation to build.gradle depenences 
 ```
-implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.30'
+ 
+    implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.30'
+    implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:oppwa@aar'
+    implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:msa@aar'
+    implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:ipworks3ds_sdk@aar'
 
 ```
+
+
+### Testing Installing without SDK
+* in android/app/build.gradle file add in dependency :
+
+* this version have no .aar files, means just for testing , try in code use class "TestHyperPay.getName();"
+```
+
+```
+or using latest version number
+
+* after install trying to get name of testin
+```
+        TestHyperPay.getName();
+```
+
