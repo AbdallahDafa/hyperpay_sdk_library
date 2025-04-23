@@ -96,13 +96,13 @@ afterEvaluate {
 
                 // upload aar file path
                 artifact("./libs/ipworks3ds_sdk.aar") {
-                    classifier = "dafahyperpaysdk" // 👈 this avoids conflict
+                    classifier = "ipworks3ds_sdk" // 👈 this avoids conflict
                 }
                 artifact("./libs/msa.aar"){
-                    classifier = "dafahyperpaysdk" // 👈 this avoids conflict
+                    classifier = "msa" // 👈 this avoids conflict
                 }
                 artifact("./libs/oppwa.mobile.aar"){
-                    classifier = "dafahyperpaysdk" // 👈 this avoids conflict
+                    classifier = "oppwa" // 👈 this avoids conflict
                 }
             }
 
