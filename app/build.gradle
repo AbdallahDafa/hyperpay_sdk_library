@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+
+
+    namespace 'com.dafa.hyperpaysdk'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.dafa.myapplication10"
+        minSdk 24 //AlgorithmInputNumberWithTwoArrayIntegerSumThenModule.java reference need 24
+        targetSdk 34
+
+        //step 1 : a- edit "EnvironmentConstant" class version
+        //         b- edit EnvironmentConstant.isTest = false
+        //         c- choose company number EnvironmentConstant.company = ??
+        versionCode 467    //step 2  ..
+        versionName "467" //step 3
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+}
