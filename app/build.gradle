@@ -1,8 +1,10 @@
+
+//switch between application and library by choose one type :
 plugins {
-//    id 'com.android.application'
-    id 'com.android.library'
+//    id 'com.android.application' // means type applicaiton
+    id 'com.android.library'  // means type library
 }
-//apply plugin: 'com.android.library'
+
 
 
 android {
