@@ -19,6 +19,7 @@ plugins {
     id 'com.android.application' version '7.4.2' apply false // working with gradle version 7.6
 
 }
+apply plugin: 'com.android.library'
 
 //allprojects {
 //    repositories {
@@ -28,11 +29,7 @@ plugins {
 //    }
 //}
 
-
-
-
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
+//task clean(type: Delete) {
+//    delete rootProject.buildDir
+//}
 
