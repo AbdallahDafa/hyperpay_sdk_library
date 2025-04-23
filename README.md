@@ -15,7 +15,7 @@ allprojects {
     }
 }
 ```
-Or, in newer Gradle versions (settings.gradle or settings.gradle.kts), make sure JitPack is added like this:
+in newer Gradle versions (settings.gradle or settings.gradle.kts), make sure JitPack is added like this:
 gradle
 
 ```groovy
@@ -25,7 +25,7 @@ dependencyResolutionManagement {
         mavenCentral()
         maven { url 'https://jitpack.io' }
     }
-}
+} 
 
 ```
 ## Step 2 : implementation library 
