@@ -5,3 +5,4 @@
 implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.0'
 
 ```
+or using latest version number 
