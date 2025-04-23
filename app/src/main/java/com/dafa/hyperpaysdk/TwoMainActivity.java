@@ -1,4 +1,4 @@
-package com.dafa.myapplication10;
+package com.dafa.hyperpaysdk;
 
 import android.os.Bundle;
 
