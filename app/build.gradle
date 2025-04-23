@@ -14,7 +14,8 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.dafa.hyperpaysdk"
+        //applicationId "com.dafa.hyperpaysdk" // this line removed in library , while be found in case application
+
         minSdk 24 //AlgorithmInputNumberWithTwoArrayIntegerSumThenModule.java reference need 24
         targetSdk 34
         versionCode 467    //step 2  ..
