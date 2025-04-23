@@ -19,4 +19,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "HyperPayLibrary"
 include ':app'
-include ':oppwa'

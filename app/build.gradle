@@ -69,14 +69,25 @@ dependencies {
 
 // publish release command
 afterEvaluate {
-    publishing {
+
+        publishing {
         publications {
+
+            //config
+            aar(MavenPublication) {
+                from components.release   // Use components.release for an AAR library
+
+                groupId = project.findProperty("group") ?: "com.github.AbdallahDafa"  // Replace with your desired group ID
+                artifactId = "hyperpay_sdk_library"// Replace with your desired artifact ID
+                version = project.findProperty("version") ?: "1.0.12"         // Replace with your desired version
+            }
+
             release(MavenPublication) {
                 from components.release
 
                 groupId = project.findProperty("group") ?: "com.github.AbdallahDafa"
                 artifactId = "hyperpay_sdk_library"
-                version = project.findProperty("version") ?: "1.0.11"
+                version = project.findProperty("version") ?: "1.0.12"
             }
         }
     }
