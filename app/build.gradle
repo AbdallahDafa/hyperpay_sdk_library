@@ -84,7 +84,7 @@ afterEvaluate {
 //                println "******* abdo - dir is: $libs"
 
                 // upload aar file path
-                artifact("$rootDir/HyperPayLibrary/app/libs/ipworks3ds_sdk.aar")
+                artifact("$rootDir/HyperPayLibrary/libs/ipworks3ds_sdk.aar")
                 artifact("$rootDir/HyperPayLibrary/libs/msa.aar")
                 artifact("$rootDir/HyperPayLibrary/libs/oppwa.mobile.aar")
 //                artifact("$rootDir/app/libs/ipworks3ds_sdk.aar")
