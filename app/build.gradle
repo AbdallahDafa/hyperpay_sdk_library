@@ -52,7 +52,7 @@ dependencies {
 
 
     //-----------------hyper pay demo
-//    implementation fileTree(include: ["*.aar"], dir: "libs")
+    implementation fileTree(include: ["*.aar"], dir: "libs")
 
 //    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
 //    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1"
