@@ -83,12 +83,12 @@ afterEvaluate {
                 // print for testing
                 println "******* abdo - publications Root dir is: $rootDir"
                 def fileSdkTest = file("./libs/ipworks3ds_sdk.aar")
-                println "fileSdkTest path: ${fileSdkTest.absolutePath}"
+                println "******* abdo - fileSdkTest path: ${fileSdkTest.absolutePath}"
                 def fileTest = file("./libs/myfiles.txt")
-                println "fileTest toURI: ${fileTest.toURI()}"
-                println "fileTest toPath: ${myFile2.toPath()}"
-                println "fileTest toString: ${myFile2.toString()}"
-                println "fileTest exists: ${myFile2.exists()}"
+                println "******* abdo - fileTest toURI: ${fileTest.toURI()}"
+                println "******* abdo - fileTest toPath: ${fileTest.toPath()}"
+                println "******* abdo - fileTest toString: ${fileTest.toString()}"
+                println "******* abdo - fileTest exists: ${fileTest.exists()}"
 
 //                println "******* abdo - dir is: $libs"
 
