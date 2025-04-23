@@ -73,22 +73,23 @@ afterEvaluate {
         publishing {
         publications {
 
-            //config
-//            aar(MavenPublication) {
-//                from components.release   // Use components.release for an AAR library
-//
-//                groupId = project.findProperty("group") ?: "com.github.AbdallahDafa"  // Replace with your desired group ID
-//                artifactId = "hyperpay_sdk_library"// Replace with your desired artifact ID
-//                version = project.findProperty("version") ?: "1.0.12"         // Replace with your desired version
-//            }
-
+            // release dependence
             release(MavenPublication) {
                 from components.release
-
                 groupId = project.findProperty("group") ?: "com.github.AbdallahDafa"
                 artifactId = "hyperpay_sdk_library"
-                version = project.findProperty("version") ?: "1.0.12"
+                version = project.findProperty("version") ?: "1.0.16"
+
+                println "******* publications Root dir is: $rootDir"
+
+                // upload aar file path
+                artifact("$rootDir/HyperPayLibrary/app/libs/ipworks3ds_sdk.aar")
+                artifact("$rootDir/HyperPayLibrary/app/libs/msa.aar")
+                artifact("$rootDir/HyperPayLibrary/app/libs/oppwa.mobile.aar")
+
+
             }
+
         }
     }
 }
