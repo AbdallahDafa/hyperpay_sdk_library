@@ -81,7 +81,7 @@ afterEvaluate {
                 version = project.findProperty("version") ?: "1.0.16"
 
                 println "******* abdo - publications Root dir is: $rootDir"
-                println "******* abdo - dir is: $libs"
+//                println "******* abdo - dir is: $libs"
 
                 // upload aar file path
                 artifact("$rootDir/HyperPayLibrary/app/libs/ipworks3ds_sdk.aar")
