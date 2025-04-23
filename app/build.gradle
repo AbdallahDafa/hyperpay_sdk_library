@@ -86,13 +86,6 @@ afterEvaluate {
                 println "******* abdo - fileSdkTest path: ${fileSdkTest.absolutePath}"
                 println "******* abdo - fileSdkTest exists: ${fileSdkTest.exists()}"
 
-//                def fileTest = file("./libs/myfiles.txt")
-//                println "******* abdo - fileTest toURI: ${fileTest.toURI()}"
-//                println "******* abdo - fileTest toPath: ${fileTest.toPath()}"
-//                println "******* abdo - fileTest toString: ${fileTest.toString()}"
-//                println "******* abdo - fileTest exists: ${fileTest.exists()}"
-
-//                println "******* abdo - dir is: $libs"
 
                 // upload aar file path
                 artifact("./libs/ipworks3ds_sdk.aar") {

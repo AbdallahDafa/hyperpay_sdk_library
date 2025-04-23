@@ -57,6 +57,6 @@ or using latest version number
 ## Step 2 : Install sdk in your project
 
 ```
-implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.20'
+implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.30'
 
 ```
