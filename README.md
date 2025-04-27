@@ -41,8 +41,8 @@ dependencyResolutionManagement {
     implementation fileTree(include: ["*.aar"], dir: "libs")
     implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.30'
     implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:oppwa@aar'
-    implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:msa@aar'
-    implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:ipworks3ds_sdk@aar'
+    //implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:msa@aar'
+    //implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:ipworks3ds_sdk@aar'
 
 ```
 
