@@ -43,15 +43,15 @@ dependencyResolutionManagement {
 *  edition of aar file is : 8991
 * example ipworks3ds_sdk_8991.aar
 ``` 
-    // oppwa aar
+    // install file : oppwa aar
     implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.32'
     implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.32:oppwa@aar'
 
-    // mas aar
+    // install file : mas aar
     implementation 'com.github.AbdallahDafa:hyperpay_sdk_library_msa:v1.0.32'
     implementation 'com.github.AbdallahDafa:hyperpay_sdk_library_msa:1.0.32:msa@aar'
 
-    //3ds aar
+    //install file : ipworks3ds_sdk aar
     implementation 'com.github.AbdallahDafa:hyperpay_sdk_library_3ds:v1.0.36'
     implementation 'com.github.AbdallahDafa:hyperpay_sdk_library_3ds:1.0.36:ipworks3ds_sdk@aar'
 ```
