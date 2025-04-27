@@ -1,4 +1,5 @@
 # HyperPay SDK Implemnation Library
+# Installer File AAR "appwa.mobile.aar" by implementaion dependence
 
 ## Step 1 : allow download library 
 
@@ -37,13 +38,9 @@ dependencyResolutionManagement {
 ## Step 2 : Install sdk in your project
 
 ### implementation to build.gradle depenences 
-```
-    implementation fileTree(include: ["*.aar"], dir: "libs")
+``` 
     implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.30'
-    implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:oppwa@aar'
-    //implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:msa@aar'
-    //implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:ipworks3ds_sdk@aar'
-
+    implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.30:oppwa@aar' 
 ```
 
 

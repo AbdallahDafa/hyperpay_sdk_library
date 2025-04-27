@@ -1,8 +1,6 @@
 
-//switch between application and library by choose one type :
 plugins {
-//    id 'com.android.application' // means type applicaiton
-    id 'com.android.library'  // means type library
+    id 'com.android.library'
     id 'maven-publish'
 }
 
@@ -15,9 +13,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        //applicationId "com.dafa.hyperpaysdk" // this line removed in library , while be found in case application
-
-        minSdk 24 //AlgorithmInputNumberWithTwoArrayIntegerSumThenModule.java reference need 24
+        minSdk 24
         targetSdk 34
         versionCode 467    //step 2  ..
         versionName "467" //step 3
@@ -41,32 +37,6 @@ android {
 
 
 
-dependencies {
-//
-//    implementation 'androidx.appcompat:appcompat:1.6.1'
-//    implementation 'com.google.android.material:material:1.9.0'
-//    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-//    testImplementation 'junit:junit:4.13.2'
-//    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-
-
-    //-----------------hyper pay demo
-//    implementation fileTree(include: ["*.aar"], dir: "libs")
-
-//    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
-//    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1"
-//    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1"
-//    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
-////    implementation "androidx.appcompat:appcompat:1.6.1"
-//    implementation "androidx.webkit:webkit:1.9.0"
-//    implementation "com.google.code.gson:gson:2.10"
-//    implementation "androidx.browser:browser:1.7.0"
-////    implementation "com.google.android.material:material:1.11.0"
-//    implementation "androidx.fragment:fragment-ktx:1.6.2"
-//    implementation "com.google.android.gms:play-services-wallet:19.2.1"
-}
-
 // publish release command
 afterEvaluate {
 
@@ -82,20 +52,14 @@ afterEvaluate {
 
                 // print for testing
                 println "******* abdo - publications Root dir is: $rootDir"
-                def fileSdkTest = file("./libs/ipworks3ds_sdk.aar")
+                def fileSdkTest = file("./libs/oppwa.mobile.aar")
                 println "******* abdo - fileSdkTest path: ${fileSdkTest.absolutePath}"
                 println "******* abdo - fileSdkTest exists: ${fileSdkTest.exists()}"
 
 
                 // upload aar file path
-                artifact("./libs/ipworks3ds_sdk.aar") {
-                    classifier = "ipworks3ds_sdk" // 👈 this avoids conflict
-                }
-                artifact("./libs/msa.aar"){
-                    classifier = "msa" // 👈 this avoids conflict
-                }
                 artifact("./libs/oppwa.mobile.aar"){
-                    classifier = "oppwa" // 👈 this avoids conflict
+                    classifier = "oppwa"
                 }
             }
 
