@@ -39,8 +39,8 @@ dependencyResolutionManagement {
 
 ### implementation to build.gradle depenences 
 ``` 
-    implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.32'
-    implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.32:oppwa@aar' 
+    implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:v1.0.36'
+    implementation 'com.github.AbdallahDafa:hyperpay_sdk_library:1.0.36:oppwa@aar' 
 ```
 
 
